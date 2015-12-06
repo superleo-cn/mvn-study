@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basic-core-parent/basic-core-common/basic-core-common.iml" filepath="$PROJECT_DIR$/basic-core-parent/basic-core-common/basic-core-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic-core-parent/basic-core-log/basic-core-log.iml" filepath="$PROJECT_DIR$/basic-core-parent/basic-core-log/basic-core-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic-core-parent/basic-core-parent.iml" filepath="$PROJECT_DIR$/basic-core-parent/basic-core-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvn-study.iml" filepath="$PROJECT_DIR$/mvn-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-parent/service-parent.iml" filepath="$PROJECT_DIR$/service-parent/service-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-parent/service-user/service-user.iml" filepath="$PROJECT_DIR$/service-parent/service-user/service-user.iml" />
+    </modules>
+  </component>
+</project>
