@@ -19,7 +19,7 @@ public class MyHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object result = null;
         try {
-            // System.out.println("Proxy == " + proxy);
+            // System.out.println("Proxy == " + prox        y);
             if (method.getName().equals("setData")) {
                 System.out.println("Before Set Data.");
             }
