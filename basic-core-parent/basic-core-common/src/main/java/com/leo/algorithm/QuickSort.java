@@ -66,7 +66,7 @@ public class QuickSort {
         int SIZE = 7;
         int MAX = 20;
         //int[] numbers = new int[SIZE];
-        int[] numbers = new int[]{23, 43, 1, 3, 5, 10};
+        int[] numbers = new int[]{23, 43, 1, 3, 5, 10, 24, 4, 9};
 //        Random generator = new Random();
 //        for (int i = 0; i < numbers.length; i++) {
 //            numbers[i] = generator.nextInt(MAX);
