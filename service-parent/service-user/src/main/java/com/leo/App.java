@@ -5,6 +5,6 @@ package com.leo;
  */
 public class App {
     public static void main(String[] args) {
-        LogUtil.log("Hello World!");
+        System.out.println(LogUtil.log("Hello World!"));
     }
 }

@@ -16,6 +16,7 @@
 
     <build>
         <plugins>
+            <!-- jar包生成插件，可以将jar包指定一个新的目录 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>

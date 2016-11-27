@@ -1,12 +1,14 @@
 package com.leo;
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.security.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
 
 /**
  * RSA非对称型加密的公钥和私钥
+ *
  * @author 五斗米 <如转载请保留作者和出处>
  * @blog http://blog.csdn.net/mq612
  */
@@ -23,6 +25,7 @@ public class Key {
 
     /**
      * 构造函数
+     *
      * @param in 指定密匙长度（取值范围：512～2048）
      * @throws NoSuchAlgorithmException 异常
      */
@@ -46,10 +49,8 @@ public class Key {
     public static void main(String[] args) {
         try {
             new Key(1024, "/Users/superleo/Documents/java/idea_java/mvn-study");
-        }
-        catch (IOException ex) {
-        }
-        catch (NoSuchAlgorithmException ex) {
+        } catch (IOException ex) {
+        } catch (NoSuchAlgorithmException ex) {
         }
     }
 

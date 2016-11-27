@@ -15,4 +15,8 @@ public class LogUtil {
         }
         System.out.println(i);
     }
+
+    public static String log(String msg) {
+        return msg;
+    }
 }

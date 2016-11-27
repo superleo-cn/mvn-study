@@ -2,6 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- 项目配置，如果是有多个子项目, packaging一般是pom属性 -->
     <groupId>com.leo</groupId>
     <artifactId>mvn-study</artifactId>
     <version>1.1-SNAPSHOT</version>
@@ -9,19 +10,34 @@
     <name>mvn-study</name>
     <url>http://maven.apache.org</url>
 
+    <!-- 各个子模块, 有顺序依赖 -->
     <modules>
         <module>basic-core-parent</module>
         <module>service-parent</module>
         <module>config</module>
     </modules>
 
+    <!-- 系统的属性变量，可以通过${name}进行赋值 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <workspace.path>${project.basedir}</workspace.path>
         <release.version>1.1-SNAPSHOT</release.version>
-        <junit.version>3.8.1</junit.version>
+        <!--<junit.version>4.12</junit.version>-->
     </properties>
 
+    <!-- 版本吧管理, 注意这个的意思是统一配置jar包的版本，在子项目中还是需要再次引入的。和单纯的dependencies不一样 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 编译构建的时候,可以选择对应的插件 -->
     <build>
         <plugins>
             <plugin>
